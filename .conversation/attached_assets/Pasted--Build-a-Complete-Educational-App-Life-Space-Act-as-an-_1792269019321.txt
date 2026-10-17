@@ -1,0 +1,117 @@
+# Build a Complete Educational App: Life & Space
+
+Act as an expert UI/UX designer, full-stack developer, children's educator, and space-science specialist.
+
+Build a complete, functional, interactive educational web app called **Life & Space**, designed for children aged 7–11 and inspired by NASA science and open data.
+
+The app must teach children how astronauts survive in space and how we can protect life on Earth. The main experience should be a step-by-step simulation of an astronaut's life aboard a space station.
+
+Do not create just a landing page or a static prototype. Build the actual working app with interactive lessons, validation, exercises, progress tracking, and responsive layouts.
+
+## 1. Main concept
+
+The child becomes the mission commander and helps a cute astronaut named Nova complete daily activities in space.
+
+Nova needs to:
+- Breathe safely and maintain healthy cabin air.
+- Eat suitable food and stay hydrated.
+- Recover and conserve water.
+- Maintain personal hygiene.
+- Grow plants and understand their role in life-support research.
+- Manage waste and recycle materials where appropriate.
+- Understand exercise, sleep, and daily routines in microgravity.
+- Learn how astronauts protect life in space and how people can protect Earth's ecosystems.
+
+The simulation should feel like an interactive space mission, not a collection of ordinary quizzes.
+
+## 2. The most important feature: Step-by-step astronaut simulation
+
+Create a guided mission with clearly numbered steps.
+
+**Never automatically advance to the next step.**
+
+Each step must follow this exact sequence:
+
+1. Explain the current situation in simple, child-friendly English.
+2. Tell the child what Nova needs to do and why.
+3. Display an interactive activity that the child must complete.
+4. Provide a button labeled **Validate Step**.
+5. Check the child's answer or action.
+6. If the answer is incorrect or incomplete, explain the mistake kindly and let the child try again.
+7. If the answer is correct, show a success message explaining the science behind it.
+8. Only then enable a button labeled **Continue to Next Step**.
+9. Advance to the next step only when the child clicks that button.
+
+Validation must be real. Do not display a success message simply because the child clicks Validate Step.
+
+Do not use fake validation, automatic progression, or buttons that do nothing.
+
+### Example interaction
+
+**Step 2: What Should Nova Eat?**
+
+Nova is preparing a meal aboard the International Space Station.
+
+Display several illustrated food choices, such as:
+- A suitable packaged space meal.
+- A fruit or vegetable option presented in an appropriate space-food context.
+- A drink pouch.
+- An unsuitable loose food item that could create floating crumbs.
+
+Ask the child to select a suitable meal and explain why food packaging and crumbs matter in microgravity.
+
+The child selects their answer and clicks **Validate Step**.
+
+If the answer is correct:
+- Display: “Excellent! You helped Nova choose a suitable space meal.”
+- Explain that astronauts use specially prepared foods and carefully designed packaging because crumbs and floating liquids can cause problems.
+- Enable **Continue to Next Step**.
+
+If the answer is incorrect:
+- Display a helpful hint.
+- Explain the relevant concept without shaming the child.
+- Allow another attempt.
+- Keep the Continue button disabled until the answer is correct.
+
+Make every step follow this same interaction pattern.
+
+## 3. The complete astronaut mission
+
+Create at least these 10 sequential steps:
+
+### Step 1 — Welcome to the Space Station
+Introduce Nova, explain the mission, and teach what makes living in space different from living on Earth.
+
+Activity: Help Nova identify the space station and the basic resources humans need to survive.
+
+### Step 2 — What Should Nova Eat?
+Teach how astronauts eat specially prepared food in microgravity.
+
+Activity: Choose suitable food and packaging, then explain why loose crumbs can be a problem.
+
+### Step 3 — Staying Hydrated
+Explain why water is essential and how astronauts use water responsibly.
+
+Activity: Make sensible water-use choices and identify which actions reduce waste.
+
+### Step 4 — Breathing in Space
+Explain that astronauts need a controlled supply of breathable air.
+
+Activity: Match oxygen supply, carbon dioxide removal, and cabin-air monitoring to their functions.
+
+Do not suggest that astronauts can breathe ordinary unprocessed spacecraft air without life-support systems.
+
+### Step 5 — Recycling Water
+Introduce NASA's Environmental Control and Life Support System (ECLSS).
+
+Activity: Arrange a simplified water-recovery process in the correct order.
+
+Explain that actual spacecraft water treatment is more complex than the simplified activity.
+
+### Step 6 — Personal Hygiene
+Explain why astronauts need appropriate hygiene routines in microgravity.
+
+Activity: Help Nova choose suitable hygiene supplies and conserve water.
+
+### Step 7 — Exercise in Space
+Explain that astronauts exercise to help maintain muscle strength and

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Galakidd"
+description = "An interactive space-station mission for children ages 7–11. Children guide astronaut Nova through ten real, validated activities about life support, healthy routines, recycling, plants, and caring for Earth, with progress saved locally."
+version = "1.0.0"
+id = "artifacts/life-space"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19923
+
+[services.development]
+run = "pnpm --filter @workspace/life-space run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/life-space", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/life-space/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19923"
+BASE_PATH = "/"

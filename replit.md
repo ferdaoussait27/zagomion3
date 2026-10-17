@@ -1,6 +1,6 @@
-# [Project name]
+# Galakidd
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+An interactive, ten-step space-station mission where children help Nova learn about life support and protecting Earth.
 
 ## Run & Operate
 
@@ -22,23 +22,31 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/life-space/src/App.tsx` — mission lesson content, answer validation, and progress state
+- `artifacts/life-space/src/index.css` — app styles and responsive layout
+- `artifacts/life-space/.replit-artifact/artifact.toml` — web artifact and preview configuration
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Mission progress is stored locally in the browser; the app has no accounts or server-side progress sync.
+- A step is marked complete only after successful validation; the next step opens only after the child explicitly continues.
+- The water-recovery activity starts in an incorrect order so validation requires the child to rearrange it.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Ten child-friendly astronaut activities covering food, water, air, hygiene, exercise, sleep, plants, waste, and Earth ecosystems
+- Step-specific answer checks, gentle retry feedback, and concise science explanations
+- Saved progress, restart confirmation, and a mission completion screen
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Keep content suitable for ages 7–11 and explain science in simple, accurate language.
+- Do not automatically advance mission steps.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- When changing step content, keep its activity controls and `validate()` correctness rules aligned.
+- Progress persists in the current browser's local storage and is not shared between devices.
 
 ## Pointers
 
